@@ -2,10 +2,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-family: 'Merriweather', serif;
   font-family: 'Mulish', sans-serif;
   font-family: 'Work Sans', sans-serif;
+}
+
+main {
+  margin: 52px 135px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Mulish:wght@500;600;700;800&family=Work+Sans:wght@400;700;800&display=swap');
@@ -58,11 +63,74 @@ header {
   display: none;
 }
 
+/* Hero Section Style */
+.hero-section {
+  height: 500px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%),
+    url('/Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.hero-content {
+  padding: 100px 135px;
+}
+
+.hero-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.hero-description {
+  margin-top: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.find-form {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.8);
+  text-align: start;
+  font-family: Mulish;
+  font-size: 16px;
+}
+
 /* Mobile Responsive Style */
 @media screen and (max-width: 600px) {
   /* Header Section */
-  header {
+  header,
+  footer,
+  .hero-content {
     padding: 1rem;
+  }
+  main {
+    margin: 1rem;
   }
   .menu-link {
     display: none;
@@ -76,5 +144,21 @@ header {
     display: grid;
     align-items: center;
     font-size: 1.5rem;
+  }
+
+  /* Hero Section */
+  .hero-title {
+    font-size: 22px;
+  }
+  .hero-description {
+    margin-top: 0.5rem;
+    font-size: 14px;
+  }
+  .find-form {
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .find-form input[type='submit'] {
+    text-align: center;
   }
 }
