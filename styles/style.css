@@ -1,0 +1,80 @@
+/* Global Attribute */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Mulish:wght@500;600;700;800&family=Work+Sans:wght@400;700;800&display=swap');
+
+/* Header and Nav Section */
+header {
+  background: #fff;
+  padding: 52px 135px;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #131318;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.logo-section span {
+  color: #ff5400;
+}
+
+.menu-link {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 3rem;
+}
+
+.menu-link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Mulish;
+  font-weight: 700;
+}
+
+.menu-link a:first-child {
+  color: #ff5400;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Mobile Responsive Style */
+@media screen and (max-width: 600px) {
+  /* Header Section */
+  header {
+    padding: 1rem;
+  }
+  .menu-link {
+    display: none;
+  }
+
+  .logo-section {
+    font-size: 1.25rem;
+  }
+
+  .mobile-nav {
+    display: grid;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}
