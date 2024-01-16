@@ -224,6 +224,8 @@ select {
 }
 
 .favorite-place-img img {
+  border-radius: 1rem;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.2) 0%, rgba(19, 19, 24, 0.2) 100%);
   height: 100%;
   width: 100%;
 }
@@ -312,6 +314,106 @@ select {
   border-radius: 1rem;
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+
+/* NewsLetter Section Style */
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Here Grid Using only for responsive purpose for minimum scrolling */
+
+.newsletter-content {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  align-items: center;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #ff5400;
+}
+
+.newsletter-content h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.newsletter-content p {
+  margin-top: 1rem;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.newsletter-content hr {
+  margin: 1.5rem 0;
+  color: rgba(19, 19, 24, 0.1);
+}
+
+form input {
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  font-family: Mulish;
+  font-size: 1rem;
+}
+
+form input[type='submit'] {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 1.25rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  background: #ff5400;
+}
+
+.newsletter-img {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  position: relative;
+}
+
+.newsletter-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.newsletter-offer {
+  position: absolute;
+  width: 70%;
+  right: 4%;
+  bottom: 15%;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: #ff5400;
+  padding: 2rem;
+  transform: rotate(-19.628deg);
+  flex-shrink: 0;
+  text-align: center;
+}
+.newsletter-offer span {
+  font-family: Mulish;
+  font-size: 1.5rem;
+}
+.newsletter-offer h3 {
+  font-family: Mulish;
+  font-size: 1.7rem;
+  font-weight: 800;
 }
 
 /* Mobile Responsive Style */
@@ -403,4 +505,32 @@ select {
   }
 
   /* newsletter section */
+
+  .newsletter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .newsletter-offer {
+    border-radius: 0.66056rem;
+    background: #ff5400;
+    height: 5rem;
+    padding: 1rem;
+    width: 60%;
+    right: 4%;
+    bottom: 15%;
+  }
+
+  .newsletter-img img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .newsletter-offer span {
+    text-align: center;
+    font-family: Mulish;
+    font-size: 0.8rem;
+  }
+  .newsletter-offer h3 {
+    font-size: 1.2rem;
+  }
 }
