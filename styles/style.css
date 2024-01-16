@@ -9,7 +9,7 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-main {
+main section {
   margin: 52px 135px;
 }
 
@@ -120,7 +120,125 @@ select {
   font-family: Mulish;
   font-size: 16px;
 }
+.find-form input[type='submit'] {
+  background: #ff5400;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 700;
+}
 
+/* Best Place Section */
+
+.best-place {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* Here using grid and rows auto for maintain height with image */
+.best-place-content {
+  display: grid;
+  grid-template-rows: auto;
+}
+.best-place-content h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.best-place-content p {
+  margin-top: 1.5rem;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.best-place-content ul {
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 16px;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.best-place-content button {
+  margin-top: 2rem;
+  max-width: 11rem;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.best-place-img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Favorite Place Section Style */
+.favorite-place-content {
+  text-align: center;
+}
+
+.favorite-place-content h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+}
+.favorite-place-content p {
+  margin: 1rem auto;
+  max-width: 600px;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 26px; /* 162.5% */
+}
+
+.first-favorite-place-img,
+.middle-favorite-place-img,
+.last-favorite-place-img {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.first-favorite-place-img {
+  grid-template-columns: repeat(2, auto);
+}
+.middle-favorite-place-img {
+  grid-template-columns: 1.5fr 2fr 1fr;
+}
+.last-favorite-place-img {
+  grid-template-columns: 1fr 2fr;
+}
+
+.favorite-place-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.favorite-place-img h3 {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Mulish;
+  font-size: 28px;
+  font-weight: 800;
+}
 /* Mobile Responsive Style */
 @media screen and (max-width: 600px) {
   /* Header Section */
@@ -129,8 +247,8 @@ select {
   .hero-content {
     padding: 1rem;
   }
-  main {
-    margin: 1rem;
+  main section {
+    margin: 1.5rem;
   }
   .menu-link {
     display: none;
@@ -160,5 +278,34 @@ select {
   }
   .find-form input[type='submit'] {
     text-align: center;
+    border-radius: 0.5rem;
+    background: #ff5400;
+  }
+
+  /* Best Place Section Style */
+  .best-place {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Favorite Place Section Style */
+  .favorite-place-content h3 {
+    font-size: 20px;
+  }
+
+  .favorite-place-content p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .favorite-place-img img {
+    height: 15rem;
+  }
+
+  .first-favorite-place-img,
+  .middle-favorite-place-img,
+  .last-favorite-place-img {
+    gap: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
