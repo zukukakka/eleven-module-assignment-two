@@ -128,6 +128,51 @@ select {
   font-weight: 700;
 }
 
+/* About Section Style Unique Make */
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+}
+.about-content {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  text-align: start;
+}
+.about-content h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.about-content p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+.about-content button {
+  padding: 1rem;
+  border: none;
+  width: 50%;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* Best Place Section */
 
 .best-place {
@@ -478,7 +523,7 @@ footer hr {
     padding: 1rem;
   }
   main section {
-    margin: 1.5rem;
+    margin: 3rem 1.5rem;
   }
   footer {
     padding: 2rem 2.5rem;
@@ -515,6 +560,22 @@ footer hr {
     background: #ff5400;
   }
 
+  /* About Section Responsive */
+  .about-us {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    order: 2;
+  }
+  .about-content p {
+    margin-top: 0.5rem;
+  }
+  .about-content button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+
   /* Best Place Section Style */
   .best-place {
     grid-template-columns: repeat(1, 1fr);
@@ -522,7 +583,7 @@ footer hr {
 
   /* Favorite Place Section Style */
   .favorite-place-content h3 {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
 
   .favorite-place-content p {
@@ -545,7 +606,7 @@ footer hr {
   /* Choose Us Section Responsive */
   .choose-us-content h3 {
     font-family: Mulish;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
   }
 
   .choose-us-content p {
