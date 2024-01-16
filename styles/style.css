@@ -10,7 +10,7 @@
 }
 
 main section {
-  margin: 52px 135px;
+  margin: 100px 135px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Mulish:wght@500;600;700;800&family=Work+Sans:wght@400;700;800&display=swap');
@@ -18,7 +18,7 @@ main section {
 /* Header and Nav Section */
 header {
   background: #fff;
-  padding: 52px 135px;
+  padding: 52px 135px 0;
 }
 
 .nav-bar {
@@ -239,6 +239,81 @@ select {
   font-size: 28px;
   font-weight: 800;
 }
+
+/* Choose Us Section Style */
+.choose-us-content {
+  text-align: center;
+}
+.choose-us-content {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.choose-us-content p {
+  max-width: 643px;
+  margin: 1.5rem auto;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.choose-us-items {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.choose-us-items h4 {
+  margin-top: 2rem;
+  color: #131318;
+  font-family: Mulish;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.choose-us-items p {
+  margin-top: 2rem;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+.choose-us-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.first-item,
+.second-item,
+.last-item {
+  padding: 2rem;
+}
+
+.first-item {
+  border-radius: 1rem;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.second-item {
+  border-radius: 1rem;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.last-item {
+  width: 50%;
+  border-radius: 1rem;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
 /* Mobile Responsive Style */
 @media screen and (max-width: 600px) {
   /* Header Section */
@@ -307,5 +382,23 @@ select {
   .last-favorite-place-img {
     gap: 0.5rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Choose Us Section Responsive */
+  .choose-us-content h3 {
+    font-family: Mulish;
+    font-size: 1.25rem;
+  }
+
+  .choose-us-content p {
+    font-family: Mulish;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .choose-us-item {
+    grid-template-columns: 1fr;
+  }
+  .last-item {
+    width: 100%;
   }
 }
