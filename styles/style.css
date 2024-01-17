@@ -368,6 +368,7 @@ button {
 }
 
 .item {
+  width: 40vw;
   margin: 0 auto;
   padding: 3.15rem;
   border-radius: 1rem;
@@ -689,6 +690,7 @@ footer hr {
   }
   .about-content p {
     margin-top: 0.5rem;
+    font-size: 1.4rem;
   }
   .about-content button {
     padding: 1rem;
@@ -761,6 +763,10 @@ footer hr {
     padding: 0 2rem;
     align-items: end;
     margin-bottom: 1rem;
+  }
+
+  .item {
+    width: 100%;
   }
 
   .item li span,
@@ -907,6 +913,7 @@ footer hr {
     margin-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .find-form button {
     border-radius: 0.5rem;
     background: #ff5400;
@@ -920,7 +927,8 @@ footer hr {
     order: 2;
   }
   .about-content p {
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
   }
   .about-content button {
     padding: 1rem;
@@ -983,6 +991,10 @@ footer hr {
     padding: 0 2rem;
     align-items: end;
     margin-bottom: 1rem;
+  }
+
+  .item {
+    width: 100%;
   }
 
   .item ul {
